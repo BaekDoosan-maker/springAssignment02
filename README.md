@@ -73,4 +73,12 @@ Requirement:  과제에 요구되는 사항이에요 <br>
     - 비밀번호와 비밀번호 확인 값이 일치하지 않을 때 “비밀번호와 비밀번호 확인이 일치하지 않습니다.” 라는 에러 메세지를 resonse에 포함하기 <br>
     - 로그인 시, 전달된 닉네임과 비밀번호 중 맞지 않는 정보가 있다면 "사용자를 찾을 수 없습니다."라는 에러 메세지를 response에 포함하기 <br>
     - AccessToken이 있고, 유효한 Token이면서 해당 사용자가 작성한 게시글/댓글이 아닌 경우에는 “작성자만 삭제할 수 있습니다.”라는 에러 메세지를 response에 포함하기 <br>
+    
+<h1>API 명세 </h1>
 
+
+|기능|Method|url|request|respond|
+|---|---|---|---|---|
+|회원가입<br> |*POST*|/signup|{ <br>"nickname":"doosan", <br> "password":"1234" <br> }|{ <br> "success":true,<br> "data":{ <br> "id":5,<br> "nickname":"doosan", <br> "createdAt":"날짜/시간", <br> "modifiedAt":"날짜/시간 <br>},<br>"error":null <br> } <br>|
+|로그인<br> |*POST*|/login|{ <br>"nickname":"doosan", <br> "password":"1234" <br> }|{ <br> "success":true,<br> "data":{ <br> "id":5,<br> "nickname":"doosan", <br> "createdAt":"날짜/시간", <br> "modifiedAt":"날짜/시간 <br>},<br>"error":null <br> } <br>|
+|게시글 작성<br> |*POST*|/api/boards|{ <br>"nickname":"doosan", <br> "password":"1234" <br> }|{ <br> "success":true,<br> "data":{ <br> "id":5,<br> "title":"title",<br> "content":"content",<br> "user":"user"  <br> "createdAt":"날짜/시간", <br> "modifiedAt":"날짜/시간 <br>},<br>"error":null <br> } <br>|
