@@ -79,7 +79,7 @@ Requirement:  과제에 요구되는 사항이에요 <br>
 
 |기능|Method|url|request|respond|
 |---|---|---|---|---|
-|회원가입<br> |*POST*|/signup|{ <br>"username":"doosan", <br> "password":"1234", <br> "passwordCheck":"1234" }|{ <br> "success":true,<br> "data":{ <br> "id":5,<br> "username":"doosan", <br> "createdAt":"날짜/시간", <br> "modifiedAt":"날짜/시간 <br>},<br>"error":null <br> } <br>|
+|회원가입<br> |*POST*|/signup|{ <br>"username":"doosan", <br> "password":"1234", <br> "passwordCheck":"1234" <br> }|{ <br> "success":true,<br> "data":{ <br> "id":5,<br> "username":"doosan", <br> "createdAt":"날짜/시간", <br> "modifiedAt":"날짜/시간 <br>},<br>"error":null <br> } <br>|
 |로그인<br> |*POST*|/login|{ <br>"username":"doosan", <br> "password":"1234" <br> }|{ <br> "success":true,<br> "data":{ <br> "id":5,<br> "username":"doosan", <br> "createdAt":"날짜/시간", <br> "modifiedAt":"날짜/시간 <br>},<br>"error":null <br> } <br>|
 |게시글 작성<br> |*POST*|/api/boards|{ <br>"title":"title", <br> "content":"content" <br> }|{ <br> "success":true,<br> "data":{ <br> "id":5,<br> "title":"title",<br> "content":"content",<br> "user":"user"  <br> "createdAt":"날짜/시간", <br> "modifiedAt":"날짜/시간 <br>},<br>"error":null <br> } <br>|
 |게시글 조회<br> |*GET*|/api/boards||{ <br> "success":true,<br> "data":{ <br> "id":5,<br> "title":"title",<br> "content":"content",<br>, "comments":[], <br>"user":"user"  <br> "createdAt":"날짜/시간", <br> "modifiedAt":"날짜/시간 <br>},<br>"error":null <br> } ,<br>{ <br> "success":true,<br> "data":{ <br> "id":5,<br> "title":"title",<br> "content":"content", <br> "comments":[], <br> "user":"user"  <br> "createdAt":"날짜/시간", <br> "modifiedAt":"날짜/시간 <br>},<br>"error":null <br> } <br>|
